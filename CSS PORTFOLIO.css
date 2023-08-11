@@ -1,0 +1,78 @@
+/* Reset CSS: ช่วยล้างค่า margin และ padding ที่ถูกกำหนดให้เป็นค่าเริ่มต้น */
+body, h1, h2, h3, p, img {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* เซ็ตค่าเริ่มต้นสำหรับ body */
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://pbs.twimg.com/media/EXo9a8TVAAEFQcA.jpg:large');
+    background-size: cover; /* ปรับขนาดรูปเพื่อครอบคลุมพื้นที่ */
+    background-repeat: no-repeat; /* ไม่ให้รูปภาพซ้ำซ้อน */
+    background-attachment: fixed; /* รูปภาพนิ่งไม่เลื่อนตามการเลื่อนหน้าจอ */
+    background-position: center center; /* จัดรูปภาพให้อยู่ตรงกลาง */
+  }
+  
+  /* ส่วนส่วนหัวของเว็บ */
+  /* ส่วนส่วนหัวของเว็บ */
+  .header {
+    background: #4eff6e;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-family: "FC Lamoon", sans-serif; /* เปลี่ยน "ชื่อแบบอักษรที่คุณเลือก" เป็นชื่อที่คุณใช้งานจริง */
+    font-size: 28px; 
+}
+  
+  /* ส่วนเกี่ยวกับตัวเอง */
+  .about {
+    padding: 2rem;
+    background: white;
+    color: #000000;
+    margin: 0 auto;
+    max-width: 800px;
+    border: 4px solid #ff7b00;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start; /* ให้ข้อความอยู่ด้านบนของส่วน */
+    text-align: left; /* จัดวางข้อความทางซ้าย */
+}
+
+/* รูปภาพในส่วนเกี่ยวกับตัวเอง */
+.about img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-right: 20px; /* ระยะห่างระหว่างรูปภาพและข้อความ */
+}
+
+/* ข้อความในส่วนข้อมูลรายละเอียด */
+.profile-details h4
+ {
+    margin: 0; /* เอา margin ออก */
+    padding: 0; /* เอา padding ออก */
+    line-height: 1.2; /* ปรับค่า line-height ให้บรรทัดใกล้กัน */
+    font-family: "FC Lamoon Light", sans-serif; /* เปลี่ยน "ชื่อแบบอักษรที่คุณเลือก" เป็นชื่อที่คุณใช้งานจริง */
+    font-size: 32px; 
+}
+.profile-details p {
+    margin: 5px 0; /* เว้นระยะห่างบรรทัดด้านบนและล่าง */
+    line-height: 1.5;
+    font-family: "THSarabun", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.navbar {
+    background-color: orange;
+    display: flex;
+    justify-content: flex-end; /* เปลี่ยนเป็น flex-end เพื่อย้ายส่วนไปด้านขวา */
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px; /* เปลี่ยน margin-left แทน margin-right */
+  }
